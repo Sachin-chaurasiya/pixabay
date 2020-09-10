@@ -3,7 +3,7 @@ import React from 'react'
 const imageCard = ({ image }) => {
   const tags = image.tags.split(',');
   return (
-    <div className="rounded overflow-hidden shadow-lg hover:shadow-xl md:col-span-1 sm:col-span-3 sm:text-center sm:w-full">
+    <div className="rounded overflow-hidden shadow-lg hover:shadow-xl md:col-span-1 col-span-3 text-center w-full">
       <img src={image.webformatURL} alt="" className="w-full" />
       <div className="px-6 py-4">
         <div className="font-bold text-purple-500 text-xl mb-2">
@@ -12,17 +12,17 @@ const imageCard = ({ image }) => {
         <ul>
           <li>
             <strong>
-              Views👀:
+              Views:
             </strong> {image.views}
           </li>
           <li>
             <strong>
-              Download⬇:
+              Download:
             </strong> {image.downloads}
           </li>
           <li>
             <strong>
-              Likes👍:
+              Likes :
             </strong> {image.likes}
           </li>
         </ul>
